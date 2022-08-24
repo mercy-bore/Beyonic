@@ -1,8 +1,8 @@
+{%extends 'base.html'%}  {% block content %} {{block.super}}
 <html>
   <head>
     <style>
      body {
-      color: pink;
       text-align: center;
       } 
  
@@ -22,6 +22,28 @@
           <a href="{% url 'login' %}">Login</a>
       {% endif %}
   </div>
-  
+  {% for i in companies %}
+
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="card" style="width: 55rem;">
+           
+            <div class="card-body">
+                <h5 class="card-title">Company: {{i.title}}</h5>
+                <p class="card-text">Summary: {{i.post}}</p>
+                <p class="card-text"> Owner: {{i.customer}}</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+
+
+{% endfor %}
   </body>
 </html>
+{% endblock %}
