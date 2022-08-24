@@ -20,7 +20,7 @@ To get the project .......
 https://github.com/mercy-bore/Beyonic.git```
 ##### Navigate into the folder and install requirements  
  ```bash 
-cd awwwards pip install -r requirements.txt 
+cd Beyonic pip install -r requirements.txt 
 ```
 ##### Install and activate Virtual  
  ```bash 
