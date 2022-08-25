@@ -8,9 +8,6 @@ This project allows is a simple web app built in django that shows CRUDL operati
 ## User Story  
   
 * A user can view customers and companies.  
- 
-  
-
   
 ## Setup and Installation  
 To get the project .......  
@@ -53,7 +50,7 @@ Open the application on your browser `127.0.0.1:8000`.
 - http://127.0.0.1:8000/home/api/customers/
 - http://127.0.0.1:8000/home/api/companies/
 - http://127.0.0.1:8000/home/api/customers/customer-id/1/
-- http://127.0.0.1:8000/home/api/companies/company-id/1//
+- http://127.0.0.1:8000/home/api/companies/company-id/1/
 - http://127.0.0.1:8000/products/api/products/
 - http://127.0.0.1:8000/products/api/product/product-id/1/
  
@@ -70,4 +67,4 @@ If you have any question or contributions, please email me at [mercycherotich757
   
 ## License 
 [License](https://github.com/mercy-bore/beyonic/blob/master/LICENSE)  
-* Copyright (c) 2022 **Mercy Bore**
+* Copyright (c) 2022 **Mercy Bore**   
