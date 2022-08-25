@@ -13,24 +13,20 @@
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> {% if title %}
-    <title>The  Beyanic - {{title}}</title>
+    <title>The  Beyonic - {{title}}</title>
     {% else %}
-    <title> Beyanic LTD </title>
+    <title> Beyonic </title>
     {% endif %} {% block styles %} {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}"> {% endblock %}
 </head>
 <body>
     {% include "navbar.html" %} {% block content %}
-    <h1 class='text-center'>Welcome to Beyanic - MFS.{{date|date:"l d-F Y "}}</h1> 
-
-
-   
+    <h1 class='text-center'>Welcome to Beyonic - MFS.{{date|date:"l d-F Y "}}</h1> 
     {%endblock%} {% block scripts %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
     {% bootstrap_javascript %} {% endblock %}
-<div id="footer"> Created by: Mercy Cherotich Bore
-                </div>
+    <div id="footer" style="background-color: #142d4c; color: #ececec; text-align: center;"> Created by: Mercy Cherotich Bore </div>
 </body>
 
 

@@ -8,23 +8,25 @@
       } 
  
     </style>
- 
-    </style>
   </head>
   <body>
+
     
-  {% for i in customers %}
+  {% for i in products %}
 
 
 <div class="row">
+
     <div class="col-md-2"></div>
     <div class="col-md-8">
-      <h3 style=" color:  #142d4c;"></h3>
-        <div class="card" style="width: 45rem;">
-            <div class="card-body"  style=" color:  #142d4c;">
-                <h5 class="card-title"> {{i.first_name}}</h5>
-                <p class="card-text"> {{i.last_name}}</p>
-                <p class="card-text">  {{i.join_date}}</p>
+            <h3 style=" color:  #142d4c;"></h3>
+
+        <div class="card" style="width: 55rem;">
+           
+            <div class="card-body" style=" color:  #142d4c;">
+                <h5 class="card-title">Name: {{i.name}}</h5>
+                <p class="card-text">Category: {{i.category}}</p>
+                <p class="card-text"> Company: {{i.company}}</p>
                 </p>
             </div>
         </div>

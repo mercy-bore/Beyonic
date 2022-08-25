@@ -1,35 +1,32 @@
-<nav class="navbar ">
-    <div class="container-fluid">
-      <div class="">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" style="background-color:#385170;  color:aliceblue;">
+        <div class="container-fluid">
             {% if user.is_authenticated %}
-            <ul>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account
-                          <span class="caret"></span>
-                      </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li>
-                    <a href="{%url 'home'%}">Home</a>
-                  </li>
-                  <li>
-                    <a href="{%url 'customers'%}">View Customers</a>
-                  </li>
-                
-                  <li>
-                    <a href="{% url 'logout' %}">Logout</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            {% else %}
-            <li>
-              <a class='btn btn-default' href="{% url 'login' %}">Login</a>
-              <a class='btn btn-default' href="{% url 'signup' %}">Register</a>
+            <div class="col-sm-4 col-md-4">MFS</div>
+            <div class="col-sm-4 col-md-4"><a style="color:aliceblue;" href="{%url 'home' %} ">Beyonic</a></div>
 
-            </li>
+            <div class=" col-sm-4 col-md-4 ">
+                <a href="" class="dropdown-toggle btn btn-default  col-sm-4 col-md-4" data-toggle="dropdown" style="color:aliceblue;" role=" button " ria-expanded="false ">Account<span class="caret "></span></a>
+                <div class="dropdown-menu col-sm-4 col-md-4 " aria-labelledby="dropdownMenuLink ">
+                    <a class="dropdown-item " href="{%url 'home' %} ">Home</a>
+                    <a class="dropdown-item " href="{%url 'customers' %} ">View Customers</a>
+                    <a class="dropdown-item " href="{%url 'products' %} ">View Products</a>
+                    <a class="dropdown-item " href="{%url 'logout' %} ">Logout</a>
+                    <a class="dropdown-item " href="/admin " style="color:purple; ">Admin Panel</a> {% else %}
+                    <a class=" btn btn-default " style="color:aliceblue;" role=" button " href="/accounts/login ">Login</a> {% endif %}
+                </div>
+            </div>
+        
+        </div>
+    </nav>
+</body>
 
-            {% endif %}
-          </div>
-    </div>
-    
-  </nav>
+</html>
