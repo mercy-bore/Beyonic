@@ -53,7 +53,9 @@ Open the application on your browser `127.0.0.1:8000`.
 - http://127.0.0.1:8000/home/api/customers/
 - http://127.0.0.1:8000/home/api/companies/
 - http://127.0.0.1:8000/home/api/customers/customer-id/1/
-- http://127.0.0.1:8000/home/api/companies/company-id/1/
+- http://127.0.0.1:8000/home/api/companies/company-id/1//
+- http://127.0.0.1:8000/products/api/products/
+- http://127.0.0.1:8000/products/api/product/product-id/1/
  
 ## Technology used  
   
