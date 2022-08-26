@@ -3,11 +3,12 @@
 >[Mercy-Bore](https://github.com/macc254)  
   
 # Description  
-This project allows is a simple web app built in django that shows CRUDL operations for customers and companies
+This project allows is a simple web app built in django that shows CRUDL operations for customers and companies and products.
 
 ## User Story  
   
 * A user can view customers and companies.  
+* An admin can create, read, update, delete and list customers, products and companies
   
 ## Setup and Installation  
 To get the project .......  
